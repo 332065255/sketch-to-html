@@ -141,6 +141,7 @@ const styleParser = function (style, attributedString, layer) {
             }
             if(encodedAttributes.paragraphStyle){
                 result.alignment=encodedAttributes.paragraphStyle.alignment
+                result.lineHeight = encodedAttributes.paragraphStyle.minimumLineHeight||undefined;
             }
         }
         const decodedAttributedString = null;

@@ -81,7 +81,7 @@ class TextLayer extends LayerProtocol {
             'background': this.layer.style.linearGradientString,
             'opacity': this.layer.style.opacity,
         };
-        otherStyle['line-height']=otherStyle['line-height']=='normal'?util.px2rem(height):otherStyle['line-height'],
+        // otherStyle['line-height']=otherStyle['line-height']=='normal'?util.px2rem(height):otherStyle['line-height'],
         console.log(this.layer.style)
         /**
          * alignment

@@ -72,6 +72,10 @@ class CommonLayer extends LayerProtocol {
             'background': this.layer.style.linearGradientString,
             'opacity': this.layer.style.opacity,
         };
+        if(this.layer.type == 'artboard'){
+            frameStyle.overflow ='hidden'
+        }
+
         if(!util.isH5){
             if(this.layer.type == 'artboard'){
                 frameStyle.position='relative';
